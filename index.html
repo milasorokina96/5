@@ -8,12 +8,19 @@
 				margin: 0;
 				padding: 0;
 			}
+			html, body {
+				height: 100%;
+			}
 			body {
 				background: rgb(20,27,35) url(./image/simple.jpg);;
 				color: white;
 				font-family: Franklin Gothic;
 				background-position: top right;
 				background-repeat: no-repeat;
+			}
+			body {
+				display: flex;
+				flex-direction: column;
 			}
 			nav {
 				margin-top: 4%;
@@ -31,6 +38,9 @@
 			.menu li {
 				display: inline;
 			}
+			main {
+				flex-grow: 1;
+			}
 			.main-text {
 				width: 40%;
 				margin: 5% 54.5% 5% 5.5%;
@@ -43,7 +53,7 @@
 			}
 			footer {
 				color: rgb(80,85,91);
-				margin: 10% 0 5% 2.5%;
+				margin: 0 0 5% 2.5%;
 			}
 		</style>
 	</head>
